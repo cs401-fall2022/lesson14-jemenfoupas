@@ -1,0 +1,21 @@
+{
+  "name": "lesson14-jemenfoupas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs401-fall2022/lesson14-jemenfoupas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cs401-fall2022/lesson14-jemenfoupas/issues"
+  },
+  "homepage": "https://github.com/cs401-fall2022/lesson14-jemenfoupas#readme"
+}
