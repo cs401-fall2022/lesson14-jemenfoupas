@@ -8,12 +8,19 @@
     <title>intro to TypeScript</title>
   </head>
   <body>
-    <h1 id="word">Hello world!!!</h1>
+    <h1 id="greeting" onclick="greeting()">click : Hello world!!!</h1>
+    <h1 id="farewell" onclick="farewell()">click : Good Bye!!!</h1>
 
-    <!-- <div id="qunit"></div>
-    <div id="qunit-fixture"></div>
-    <script src="https://code.jquery.com/qunit/qunit-2.19.1.js"></script>
-    <script src="./src/Test.js"></script> -->
+    <script type="module">
+      let f = document.getElementById("farewell");
+        if(f!= null){
+            f.style.opacity = "0";
+        }
+      import {greeting} from '/build/app.js'
+      window.greeting = greeting;
+      import {farewell} from '/build/app.js'
+      window.farewell = farewell;
+  </script>
 
   </body>
 </html>
