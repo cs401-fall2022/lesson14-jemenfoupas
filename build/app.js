@@ -6,14 +6,15 @@ function hello() {
     return "Hello World";
 }
 ;
+var h = document.getElementById("greeting");
 /**
  * turns demo red
  */
 function greeting() {
     if (document != null) {
-        var h = document.getElementById("greeting");
-        if (h != null) {
-            h.style.opacity = "0";
+        var h_1 = document.getElementById("greeting");
+        if (h_1 != null) {
+            h_1.style.opacity = "0";
         }
         var f = document.getElementById("farewell");
         if (f != null) {
@@ -26,9 +27,9 @@ function greeting() {
  */
 function farewell() {
     if (document != null) {
-        var h = document.getElementById("greeting");
-        if (h != null) {
-            h.style.opacity = "1";
+        var h_2 = document.getElementById("greeting");
+        if (h_2 != null) {
+            h_2.style.opacity = "1";
         }
         var f = document.getElementById("farewell");
         if (f != null) {

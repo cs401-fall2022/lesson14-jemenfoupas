@@ -6,11 +6,12 @@ function hello (): String {
     return "Hello World";
 };
 
+
 /**
  * turns demo red
  */
  function greeting() {
-    if(document != null){
+    
         let h = document.getElementById("greeting");
         if(h != null){
             h.style.opacity = "0";
@@ -20,14 +21,13 @@ function hello (): String {
             f.style.opacity = "1";
         }
         
-    }    
+      
 }
 
 /**
  * turns demo red
  */
  function farewell() {
-    if(document != null){
         let h = document.getElementById("greeting");
         if(h != null){
             h.style.opacity = "1";
@@ -37,7 +37,7 @@ function hello (): String {
             f.style.opacity = "0";
         }
         
-    }       
+     
 }
 
 export {hello, greeting, farewell}

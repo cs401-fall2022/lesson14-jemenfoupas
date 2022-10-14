@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "Dest/script.js" defer></script>
     <title>intro to TypeScript</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
   </head>
   <body>
-    <h1 id="greeting" onclick="greeting()">click : Hello world!!!</h1>
-    <h1 id="farewell" onclick="farewell()">click : Good Bye!!!</h1>
+    <button id="greeting" onclick="greeting()">click : Hello world!!!</button>
+    <button id="farewell" onclick="farewell()">click : Good Bye!!!</button>
 
     <script type="module">
-      let f = document.getElementById("farewell");
-        if(f!= null){
-            f.style.opacity = "0";
-        }
-      import {greeting} from '/build/app.js'
+      // let f = document.getElementById("farewell");
+      //   if(f!= null){
+      //       f.style.opacity = "0";
+      //   }
+      import {greeting} from './build/app.js'
       window.greeting = greeting;
-      import {farewell} from '/build/app.js'
+      import {farewell} from './build/app.js'
       window.farewell = farewell;
   </script>
 
