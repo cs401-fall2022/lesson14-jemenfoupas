@@ -13,10 +13,10 @@
     <button id="farewell" onclick="farewell()">click : Good Bye!!!</button>
 
     <script type="module">
-      // let f = document.getElementById("farewell");
-      //   if(f!= null){
-      //       f.style.opacity = "0";
-      //   }
+      let f = document.getElementById("farewell");
+        if(f!= null){
+            f.style.opacity = "0";
+        }
       import {greeting} from './build/app.js'
       window.greeting = greeting;
       import {farewell} from './build/app.js'
