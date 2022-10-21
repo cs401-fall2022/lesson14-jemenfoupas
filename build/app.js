@@ -9,12 +9,7 @@ function hello() {
 /**
  * turns demo red
  */
-function greeting() {
-    // if(document.body.style.backgroundColor != "rgb(188, 195, 208)" ){
-    //     document.body.style.backgroundColor = "rgb(188, 195, 208)";
-    // } else {
-    //     document.body.style.backgroundColor = "black";
-    // }
+function switchColors() {
     var title = document.getElementById("firstTitle");
     var box = document.getElementById("firstBox");
     if (title != null && box != null) {
@@ -30,5 +25,5 @@ function greeting() {
         }
     }
 }
-export { hello, greeting };
+export { hello, switchColors };
 //# sourceMappingURL=app.js.map

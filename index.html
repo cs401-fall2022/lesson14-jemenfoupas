@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    
-    
+
     <section class="contentBox" id="firstBox">
       <section class="title" id="firstTitle">
         <h1 class="titleText">TypeScript for JavaScript Programmers</h1>
@@ -21,7 +20,7 @@
         primitives like string and number, but it doesn’t check that you’ve consistently 
         assigned these. TypeScript does.</p>
        <img src="img/typeByInference.png" alt="image of type by inference">
-       <button id="greeting" onclick="greeting()">Switch Colors</button>
+       <button id="greeting" onclick="switchColors()">Switch Colors</button>
       </section>
     </section>
 
@@ -44,12 +43,9 @@
         <h1 class="titleText">Defining Types</h1>
       </section>
       <section class="content">
-       <p>JavaScript offers a large variety of design patterns, 
-        but some make difficult for the types to be determined automatically. 
-        By using an interface, it is possible to specify the types in an object, example:</p>
-        <img src="img/interface declaration.png" alt="image of interface declaration" >
-        <p>To declare a JavaScript object that conforms to the shape of the interface would be </p>
-        <img src="img/interface using syntax.png" alt="image of interface using syntax">
+       <p>Since JavaScript supports classes and object-oriented programming, 
+        so does TypeScript. You can use an interface declaration with classes:</p>
+        <img src="img/interface declaration with classes.png" alt="image of interface declaration with classes" >
       </section>
     </section>
 
@@ -58,16 +54,8 @@
         <h1 class="titleText">Composing Types</h1>
       </section>
       <section class="content">
-       <p>With TypeScript, you can create complex types by combining simple ones. 
-        There are two popular ways to do so: with unions, and with generics.</p>
-      </section>
-    </section>
-
-    <section class="contentBox">
-      <section class="title">
-        <h1 class="titleText">Composing Types</h1>
-      </section>
-      <section class="content">
+        <p>With TypeScript, you can create complex types by combining simple ones. 
+          There are two popular ways to do so: with unions, and with generics.</p>
         <p>With a union, you can declare that a type could be one of many types. 
           For example, you can describe a Boolean type as being either true or false:</p>
         <img src="img/Unions.png" alt="image of Unions" >
@@ -77,9 +65,22 @@
       </section>
     </section>
 
+    <section class="contentBox">
+      <section class="title">
+        <h1 class="titleText">Looping through an array</h1>
+      </section>
+      <section class="content">
+        <p>like with JavaScript the for-of loop is a simplified for loop that loops through an 
+          entire array. The array name is placed after the of keyword in a for-of loop. 
+          Each time through the loop, the next array element is assigned to the variable in 
+          front of the of keyword</p>
+          <img src="img/forOfLoop.png" alt="image of for-of loop implementation">
+      </section>
+    </section>
+
     <script type="module">
-      import {greeting} from './build/app.js'
-      window.greeting = greeting;
+      import {switchColors} from './build/app.js'
+      window.switchColors = switchColors;
   </script>
 
   </body>

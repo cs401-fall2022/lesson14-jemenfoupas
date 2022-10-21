@@ -12,13 +12,7 @@ function hello (): String {
 /**
  * turns demo red
  */
- function greeting() {
-    // if(document.body.style.backgroundColor != "rgb(188, 195, 208)" ){
-    //     document.body.style.backgroundColor = "rgb(188, 195, 208)";
-    // } else {
-    //     document.body.style.backgroundColor = "black";
-    // }
-    
+ function switchColors() {
     let title = document.getElementById("firstTitle");
     let box = document.getElementById("firstBox");
     if(title!=null && box != null){
@@ -36,4 +30,4 @@ function hello (): String {
 }
 
 
-export {hello, greeting}
+export {hello, switchColors}
