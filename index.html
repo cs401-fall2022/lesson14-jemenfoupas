@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <button id="greeting" onclick="greeting()">Change Background</button>
     
-    <section class="contentBox">
-      <section class="title">
+    
+    <section class="contentBox" id="firstBox">
+      <section class="title" id="firstTitle">
         <h1 class="titleText">TypeScript for JavaScript Programmers</h1>
       </section>
       <section class="content">
@@ -20,9 +20,8 @@
         of these: TypeScript’s type system. For example, JavaScript provides language 
         primitives like string and number, but it doesn’t check that you’ve consistently 
         assigned these. TypeScript does.</p>
-       <p>JavaScript offers a large variety of design patterns, but some make difficult 
-        for the types to be determined automatically. By using an interface, it is 
-        possible to specify the types in an object, example:</p>
+       <img src="img/typeByInference.png" alt="image of type by inference">
+       <button id="greeting" onclick="greeting()">Switch Colors</button>
       </section>
     </section>
 
@@ -34,9 +33,9 @@
        <p>JavaScript offers a large variety of design patterns, 
         but some make difficult for the types to be determined automatically. 
         By using an interface, it is possible to specify the types in an object, example:</p>
-        <img src="img/interface declaration.png" alt="image of interface declaration" width="50%">
+        <img src="img/interface declaration.png" alt="image of interface declaration">
         <p>To declare a JavaScript object that conforms to the shape of the interface would be </p>
-        <img src="img/interface using syntax.png" alt="interface using syntax" width="50%">
+        <img src="img/interface using syntax.png" alt=" image of interface using syntax" >
       </section>
     </section>
 
@@ -48,9 +47,9 @@
        <p>JavaScript offers a large variety of design patterns, 
         but some make difficult for the types to be determined automatically. 
         By using an interface, it is possible to specify the types in an object, example:</p>
-        <img src="img/interface declaration.png" alt="image of interface declaration" width="50%">
+        <img src="img/interface declaration.png" alt="image of interface declaration" >
         <p>To declare a JavaScript object that conforms to the shape of the interface would be </p>
-        <img src="img/interface using syntax.png" alt="interface using syntax" width="50%">
+        <img src="img/interface using syntax.png" alt="image of interface using syntax">
       </section>
     </section>
 
@@ -71,21 +70,14 @@
       <section class="content">
         <p>With a union, you can declare that a type could be one of many types. 
           For example, you can describe a Boolean type as being either true or false:</p>
-        <img src="img/Unions.png" alt="Unions" width="50%">
+        <img src="img/Unions.png" alt="image of Unions" >
         <p>A popular use-case for union types is to describe the set of string or number 
           literals that a value is allowed to be:</p>
-          <img src="img/ union types is to describe the set.png" alt=" union types is to describe the set" width="50%">
+          <img src="img/ union types is to describe the set.png" alt="image of union types is to describe the set" >
       </section>
     </section>
 
-    
-
-    
-    
     <script type="module">
-      let checkbox = document.querySelector("input[name=lightMode]")
-      checkbox.addEventListener('change', greeting);
-
       import {greeting} from './build/app.js'
       window.greeting = greeting;
   </script>
