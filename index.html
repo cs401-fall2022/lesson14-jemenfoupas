@@ -6,21 +6,88 @@
     <title>intro to TypeScript</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <button id="greeting" onclick="greeting()">click : Hello world!!!</button>
-    <button id="farewell" onclick="farewell()">click : Good Bye!!!</button>
+    <button id="greeting" onclick="greeting()">Change Background</button>
+    
+    <section class="contentBox">
+      <section class="title">
+        <h1 class="titleText">TypeScript for JavaScript Programmers</h1>
+      </section>
+      <section class="content">
+       <p>TypeScript offers all of JavaScript’s features, and an additional layer on top 
+        of these: TypeScript’s type system. For example, JavaScript provides language 
+        primitives like string and number, but it doesn’t check that you’ve consistently 
+        assigned these. TypeScript does.</p>
+       <p>JavaScript offers a large variety of design patterns, but some make difficult 
+        for the types to be determined automatically. By using an interface, it is 
+        possible to specify the types in an object, example:</p>
+      </section>
+    </section>
 
+    <section class="contentBox">
+      <section class="title">
+        <h1 class="titleText">Defining Types</h1>
+      </section>
+      <section class="content">
+       <p>JavaScript offers a large variety of design patterns, 
+        but some make difficult for the types to be determined automatically. 
+        By using an interface, it is possible to specify the types in an object, example:</p>
+        <img src="img/interface declaration.png" alt="image of interface declaration" width="50%">
+        <p>To declare a JavaScript object that conforms to the shape of the interface would be </p>
+        <img src="img/interface using syntax.png" alt="interface using syntax" width="50%">
+      </section>
+    </section>
+
+    <section class="contentBox">
+      <section class="title">
+        <h1 class="titleText">Defining Types</h1>
+      </section>
+      <section class="content">
+       <p>JavaScript offers a large variety of design patterns, 
+        but some make difficult for the types to be determined automatically. 
+        By using an interface, it is possible to specify the types in an object, example:</p>
+        <img src="img/interface declaration.png" alt="image of interface declaration" width="50%">
+        <p>To declare a JavaScript object that conforms to the shape of the interface would be </p>
+        <img src="img/interface using syntax.png" alt="interface using syntax" width="50%">
+      </section>
+    </section>
+
+    <section class="contentBox">
+      <section class="title">
+        <h1 class="titleText">Composing Types</h1>
+      </section>
+      <section class="content">
+       <p>With TypeScript, you can create complex types by combining simple ones. 
+        There are two popular ways to do so: with unions, and with generics.</p>
+      </section>
+    </section>
+
+    <section class="contentBox">
+      <section class="title">
+        <h1 class="titleText">Composing Types</h1>
+      </section>
+      <section class="content">
+        <p>With a union, you can declare that a type could be one of many types. 
+          For example, you can describe a Boolean type as being either true or false:</p>
+        <img src="img/Unions.png" alt="Unions" width="50%">
+        <p>A popular use-case for union types is to describe the set of string or number 
+          literals that a value is allowed to be:</p>
+          <img src="img/ union types is to describe the set.png" alt=" union types is to describe the set" width="50%">
+      </section>
+    </section>
+
+    
+
+    
+    
     <script type="module">
-      let f = document.getElementById("farewell");
-        if(f!= null){
-            f.style.opacity = "0";
-        }
+      let checkbox = document.querySelector("input[name=lightMode]")
+      checkbox.addEventListener('change', greeting);
+
       import {greeting} from './build/app.js'
       window.greeting = greeting;
-      import {farewell} from './build/app.js'
-      window.farewell = farewell;
   </script>
 
   </body>

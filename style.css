@@ -1,0 +1,56 @@
+h1{ 
+    font-size: 16px;
+    font-family: arial;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+  }
+
+body{
+    background-color: rgb(97, 98, 100);
+}
+
+.contentBox{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    min-height: 250px;
+    margin: 50px auto;
+
+    display: flex;
+    flex-direction:column;
+
+    border-color: rgb(152, 152, 215);
+    border-style: solid;
+    border-width: 2px;
+
+    border-radius: 20px;
+
+}
+
+.title{
+    background-color: green;
+    width: 95%;
+    height: 40px;
+    margin: 10px auto;
+    text-align: center;
+
+    border-color: rgb(138, 199, 178);
+    border-style: solid;
+    border-width: 2px;
+}
+
+.content{
+    background-color: yellow;
+    width: 95%;
+    min-height: 200px;
+    margin: 10px auto;
+    overflow-wrap: break-word;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+
+
+    border-color: rgb(203, 255, 91);
+    border-style: solid;
+    border-width: 2px;
+}
